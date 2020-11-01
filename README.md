@@ -4,7 +4,7 @@
 ## DESCRIPTION
 
 ### Life Quotes
-Online Application to Post and vote quotes 
+Online Application to Post and vote quotes, users will be positing quotes and also others will be votting
 
 
 ## BDD 
