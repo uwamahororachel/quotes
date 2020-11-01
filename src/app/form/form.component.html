@@ -1,0 +1,42 @@
+<div class="container-fluid">
+    <br>
+    <h2 class="text-center">Post Your Quote Please</h2>
+    <hr>
+    <form (ngSubmit)='postProverb()' #Form='ngForm'>
+        <div class="form-group">
+  
+            <label for="nom">Your quote Here</label>
+            <textarea  class="form-control" id="nom" [(ngModel)]="newProverb.nom" name="nom" #nom='ngModel' required></textarea>
+                 
+            <div [hidden]="nom.valid || nom.pristine" class="alert alert-danger">
+                <p>quote is required</p>
+              </div>
+        </div>
+        <div class="form-group">
+  
+            <label for="auteur">Author</label>
+          
+            <input type="text" class="form-control" id="auteur" [(ngModel)]="newProverb.auteur" name="auteur" #auteur="ngModel" required>
+            <div [hidden]="auteur.valid || auteur.pristine" class="alert alert-danger">
+            <p>Author is required</p>
+         </div>
+        </div>
+        <div class="form-group">
+  
+            <label for="soumission">Publisher</label>
+            <input type="text" class="form-control" id="soumission"  [(ngModel)]="newProverb.soumission" name="soumission" #soumission="ngModel" required>
+            <div [hidden]="soumission.valid || soumission.pristine" class="alert alert-danger">
+            <p>Publisher is required</p>
+        </div>
+        </div>
+        <div class="form-group">
+
+            <label for="fullDate">Publishing date</label>
+            <input type='date' id="fullDate" [(ngModel)]="newProverb.fullDate" name="fullDate" #fullDate="ngModel" required>
+            <div [hidden]="fullDate.valid || fullDate.pristine" class="alert alert-danger">
+              <p>Date is required</p>
+            </div>
+        </div>
+        <button type="submit" class="ml-5 btn btn-danger">Post</button>
+    </form>
+  </div>
