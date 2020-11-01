@@ -1,0 +1,19 @@
+/* * {
+   
+    background-image: url("https://images.unsplash.com/photo-1528716321680-815a8cdb8cbe?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-repeat: no-repeat;
+} */
+
+.all {
+background-image: url("https://media.istockphoto.com/vectors/realistic-light-white-brick-wall-background-distressed-overlay-of-vector-id1181393673?b=1&k=6&m=1181393673&s=612x612&w=0&h=s4meCtQ8Pm9p6EfrmSgP1yf93YC98NMbRWj0pIEYs_g=");
+height: 950px;
+
+} 
+
+.footer {
+    text-align: center;
+    color:white;
+    top:0;
+    background-color: #03040f;
+    height: 10%;
+  }
